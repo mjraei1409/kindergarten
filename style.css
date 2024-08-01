@@ -3,48 +3,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 
@@ -109,6 +196,11 @@ table {
     height: 760px;
 }
 
+.header-r {
+    display: none;
+    padding: 1vh 4vw;
+}
+
 .header {
     display: flex;
     padding: 4vh 0;
@@ -149,6 +241,10 @@ table {
     width: 45%;
 }
 
+.section1-right-r {
+    display: none;
+}
+
 .section1-left-orginal {
     width: 40vw;
     margin: 10vh auto;
@@ -184,6 +280,11 @@ table {
     margin-bottom: 5vh;
 }
 
+.section2-boxs {
+    display: flex;
+    justify-content: space-around;
+}
+
 .section2-box {
     width: 18vw;
     padding: 3vh 2vw;
@@ -211,7 +312,7 @@ table {
 }
 
 .section2-box-text {
-    color: #828282; 
+    color: #828282;
     text-align: center;
     line-height: 2em;
 }
@@ -293,7 +394,8 @@ table {
     margin-top: 30vh;
 }
 
-.section5-box {
+.section5-box,
+.section5-boxx {
     width: 30vw;
     display: grid;
     gap: 3vh;
@@ -339,6 +441,11 @@ table {
     width: 23%;
 }
 
+.bottom-section-contact-h2 {
+    color: white;
+    margin-bottom: 3vh;
+}
+
 .icon-bottom {
     color: white;
     width: 20px;
@@ -356,4 +463,112 @@ table {
 
 .vazir {
     font-family: vazir;
+}
+
+@media only screen and (max-width: 600px) {
+    .top-section-r {
+        height: 50vh;
+        background: url(files/Subtract.svg) no-repeat;
+        background-position-x: left;
+        background-position-y: bottom;
+    }
+
+    .top-section {
+        display: none;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .header-r {
+        display: block;
+    }
+
+    .section1 {
+        display: grid;
+    }
+
+    .section1-right {
+        display: none;
+    }
+
+    .section1-left {
+        width: auto;
+        margin-top: -10vh;
+    }
+
+    .section1-h1 {
+        font-size: 2em;
+    }
+
+    .section1-left-orginal {
+        width: 90vw;
+    }
+
+    .section1-right-r {
+        display: block;
+    }
+
+    .section1-img {
+        width: 90vw;
+    }
+
+    .section2-boxs {
+        display: grid;
+        gap: 2vh;
+    }
+
+    .section2-box,
+    .section2-box-clicks {
+        width: 70vw;
+        padding: 5vh 10vw;
+    }
+
+    .section3 {
+        display: grid;
+    }
+
+    .section3-left,
+    .section3-img {
+        width: 90vw;
+    }
+
+    .section3-right {
+        width: 85vw;
+        padding: 0;
+        padding-top: 10vh;
+    }
+
+    .section4 {
+        display: none;
+    }
+
+    .section5-box,
+    .section5-box-img {
+        width: 80vw;
+    }
+
+    .section5-box {
+        margin-bottom: 5vh;
+    }
+
+    .section5-boxx {
+        display: none;
+    }
+
+    .bottom-section-data {
+        display: grid;
+        gap: 5vh;
+    }
+
+    .bottom-section-about,
+    .bottom-section-galery,
+    .bottom-section-contact {
+        width: 85vw;
+    }
+
+    .bottom-section-contact-h2 {
+        margin-bottom: 3vh;
+    }
 }
